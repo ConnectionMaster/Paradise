@@ -363,7 +363,7 @@
 #define INVESTIGATE_BOMB "bombs"
 
 // The SQL version required by this version of the code
-#define SQL_VERSION 20
+#define SQL_VERSION 24
 
 // Vending machine stuff
 #define CAT_NORMAL 1
@@ -429,6 +429,9 @@
 //Explosive wall groups
 #define EXPLOSIVE_WALL_GROUP_SYNDICATE_BASE "syndicate_base"
 
+/// Prepares a text to be used for maptext. Use this so it doesn't look hideous.
+#define MAPTEXT(text) {"<span class='maptext'>[##text]</span>"}
+
 // Filters
 #define FILTER_AMBIENT_OCCLUSION filter(type="drop_shadow", x=0, y=-2, size=4, color="#04080FAA")
 
@@ -486,3 +489,8 @@
 
 /// Send to the mentor Discord webhook
 #define DISCORD_WEBHOOK_MENTOR "MENTOR"
+
+// Hallucination severities
+#define HALLUCINATE_MINOR 1
+#define HALLUCINATE_MODERATE 2
+#define HALLUCINATE_MAJOR 3
